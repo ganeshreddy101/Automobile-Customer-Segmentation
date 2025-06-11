@@ -7,56 +7,44 @@ The project highlights real-world challenges in machine learning, such as label 
 
 Dataset Overview:
 2,627 records of customer profiles
-
 Features: Age, Gender, Marital Status, Profession, Spending Score, Family Size, etc.
-
 Target: Segmentation labels (A, B, C, D) assigned by the company’s business process
 
 Techniques Used:
  Exploratory Data Analysis (EDA)
-
  Feature Engineering (HighSpender, Senior, BigFamily, etc.)
-
  Label Encoding
-
  KMeans Clustering (Unsupervised)
-
  LightGBM Classifier (Supervised)
-
  Ensemble Modeling
-
  SHAP Analysis for Feature Importance
-
  Streamlit Deployment
 
 
 Key Insights:
 Clustering Didn’t Work Well
 KMeans clustering yielded low silhouette scores (< 0.3), indicating no strong natural customer clusters.
-
 Concluded that business-defined segments (A/B/C/D) don’t map cleanly to numerical features.
-
 Supervised Models Performed Better
 LightGBM classifier achieved 62.1% accuracy.
-
 Best model trained with balanced class weights, engineered features, and tuning.
 
 Important Observation
 Segment D dominates predictions even for customers with clearly different profiles.
-
 Why?
-
 Company-assigned labels likely originate from internal rules, not clean data patterns.
-
 Segment D includes diverse customers, making it broad and hard to differentiate from others.
-
 SHAP and feature analysis showed overlap between segment profiles.
 
 
 Final Model Performance (After Merging B & C)
 Segment	Precision	Recall	F1-Score
+
 A	0.43	0.53	0.47
+
 BC	0.76	0.63	0.69
+
 D	0.64	0.69	0.66
+
 Overall Accuracy			62.1%
 
