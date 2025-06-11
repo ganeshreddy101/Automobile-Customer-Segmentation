@@ -13,25 +13,33 @@ Features: Age, Gender, Marital Status, Profession, Spending Score, Family Size, 
 Target: Segmentation labels (A, B, C, D) assigned by the company’s business process
 
 Techniques Used:
- Exploratory Data Analysis (EDA)
- Feature Engineering (HighSpender, Senior, BigFamily, etc.)
- Label Encoding
- KMeans Clustering (Unsupervised)
- LightGBM Classifier (Supervised)
- Ensemble Modeling
- SHAP Analysis for Feature Importance
- Streamlit Deployment
+
+ 1.Exploratory Data Analysis (EDA)
+ 
+ 2.Feature Engineering (HighSpender, Senior, BigFamily, etc.)
+ 
+ 3.Label Encoding
+ 
+ 4.KMeans Clustering, KMeans++ and more (Unsupervised)
+ 
+ 5.LightGBM Classifier (Supervised)
+ 
+ 6.Ensemble Modeling
+ 
+ 7.SHAP Analysis for Feature Importance
+ 
+ 8.Streamlit Deployment
 
 
 Key Insights:
-Clustering Didn’t Work Well
-KMeans clustering yielded low silhouette scores (< 0.3), indicating no strong natural customer clusters.
-Concluded that business-defined segments (A/B/C/D) don’t map cleanly to numerical features.
-Supervised Models Performed Better
-LightGBM classifier achieved 62.1% accuracy.
-Best model trained with balanced class weights, engineered features, and tuning.
+~ Clustering Didn’t Work Well
+~ KMeans clustering yielded low silhouette scores (< 0.3), indicating no strong natural customer clusters.
+~ Concluded that business-defined segments (A/B/C/D) don’t map cleanly to numerical features.
+~ Supervised Models Performed Better
+~ LightGBM classifier achieved 62.1% accuracy.
+~ Best model trained with balanced class weights, engineered features, and tuning.
 
-Important Observation
+Important Observation:
 Segment D dominates predictions even for customers with clearly different profiles.
 Why?
 Company-assigned labels likely originate from internal rules, not clean data patterns.
