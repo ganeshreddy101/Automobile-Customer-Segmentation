@@ -7,7 +7,9 @@ The project highlights real-world challenges in machine learning, such as label 
 
 Dataset Overview:
 2,627 records of customer profiles
+
 Features: Age, Gender, Marital Status, Profession, Spending Score, Family Size, etc.
+
 Target: Segmentation labels (A, B, C, D) assigned by the company’s business process
 
 Techniques Used:
