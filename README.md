@@ -33,21 +33,29 @@ Techniques Used:
 
 Key Insights:
 ~ Clustering Didn’t Work Well
+
 ~ KMeans clustering yielded low silhouette scores (< 0.3), indicating no strong natural customer clusters.
+
 ~ Concluded that business-defined segments (A/B/C/D) don’t map cleanly to numerical features.
+
 ~ Supervised Models Performed Better
+
 ~ LightGBM classifier achieved 62.1% accuracy.
+
 ~ Best model trained with balanced class weights, engineered features, and tuning.
 
 Important Observation:
 Segment D dominates predictions even for customers with clearly different profiles.
+
 Why?
+
 Company-assigned labels likely originate from internal rules, not clean data patterns.
 Segment D includes diverse customers, making it broad and hard to differentiate from others.
 SHAP and feature analysis showed overlap between segment profiles.
 
 
 Final Model Performance (After Merging B & C)
+
 Segment	Precision	Recall	F1-Score
 
 A	0.43	0.53	0.47
