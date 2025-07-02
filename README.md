@@ -1,8 +1,10 @@
 ## Automobile-Customer-Segmentation
 ML-based customer segmentation model for an automobile company. Predicts business-defined segments (A, B, C, D) using LightGBM and engineered features. Includes Streamlit deployment. Also explores clustering, SHAP analysis, and model limitations from real-world data.
 This project builds a machine learning pipeline to predict customer segments (A, B, C, D) for an automobile company based on demographic and behavioral features. The segmentation labels were defined by the company's internal sales team based on historical purchase behavior and marketing performance.
+
 The goal was to recreate this segmentation logic using supervised learning, validate natural separability using clustering, and deploy a user-friendly Streamlit app for real-time customer prediction.
 Despite achieving 62.1% accuracy with LightGBM, extensive analysis revealed that Segment D dominated predictions, suggesting the business-defined labels may not be clearly distinguishable from the input features alone. KMeans clustering yielded low silhouette scores, further confirming the absence of strong natural clusters.
+
 The project highlights real-world challenges in machine learning, such as label ambiguity, feature overlap, and the need for business-context alignment. It demonstrates strong practices in data preprocessing, feature engineering, model tuning, class balancing, SHAP interpretation, and deployment.
 
 ## Dataset Overview:
@@ -31,7 +33,7 @@ Target: Segmentation labels (A, B, C, D) assigned by the company’s business pr
  8.Streamlit Deployment
 
 
-Key Insights:
+## Key Insights:
 - Clustering Didn’t Work Well
 
 - KMeans clustering yielded low silhouette scores (< 0.3), indicating no strong natural customer clusters.
