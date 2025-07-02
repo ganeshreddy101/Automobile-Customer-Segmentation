@@ -8,29 +8,29 @@ Despite achieving 62.1% accuracy with LightGBM, extensive analysis revealed that
 The project highlights real-world challenges in machine learning, such as label ambiguity, feature overlap, and the need for business-context alignment. It demonstrates strong practices in data preprocessing, feature engineering, model tuning, class balancing, SHAP interpretation, and deployment.
 
 ## Dataset Overview:
-2,627 records of customer profiles
+- 2,627 records of customer profiles
 
-Features: Age, Gender, Marital Status, Profession, Spending Score, Family Size, etc.
+- Features: Age, Gender, Marital Status, Profession, Spending Score, Family Size, etc.
 
-Target: Segmentation labels (A, B, C, D) assigned by the company’s business process
+- Target: Segmentation labels (A, B, C, D) assigned by the company’s business process
 
 ## Techniques Used:
 
- 1.Exploratory Data Analysis (EDA)
+ - Exploratory Data Analysis (EDA)
  
- 2.Feature Engineering (HighSpender, Senior, BigFamily, etc.)
+ - Feature Engineering (HighSpender, Senior, BigFamily, etc.)
  
- 3.Label Encoding
+ - Label Encoding
  
- 4.KMeans Clustering, KMeans++ and more (Unsupervised)
+ - KMeans Clustering, KMeans++ and more (Unsupervised)
  
- 5.LightGBM Classifier (Supervised)
+ - LightGBM Classifier (Supervised)
  
- 6.Ensemble Modeling
+ - Ensemble Modeling
  
- 7.SHAP Analysis for Feature Importance
+ - SHAP Analysis for Feature Importance
  
- 8.Streamlit Deployment
+ - Streamlit Deployment
 
 
 ## Key Insights:
